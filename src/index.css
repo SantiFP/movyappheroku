@@ -7,11 +7,13 @@
   }
   
   body{
-    background-color: rgb(4, 7, 19);
+    background-color: rgb(4, 7, 19); 
     text-align: center;
     color: white;
   } 
-  
+  .cursor{
+    cursor: pointer;
+  }
   .boton {
   background:rgb(49, 119, 225);}
   
@@ -45,12 +47,12 @@
 
   .backgroundMovies{
     background-image: url(../src/components/Assets/darthvader.jpg);
-    background-size: 100% 35%;
+    background-size: 100% 22rem;
     background-repeat: no-repeat;
-    position: relative;
-    z-index: -10;
+    position: absolute;
+    z-index: -10; 
     
-  }
+  } 
   
   .thumby::after{
     content: "MOVY ORIGINAL";
@@ -61,7 +63,7 @@
     position: absolute;
     z-index: 10;
     top: 7.5rem;
-    left: 0.96rem;
+    left: 0.5rem;
     border-radius: 0.1rem;
     color: white;
     font-size: 0.4rem;
@@ -69,10 +71,7 @@
     padding: 0 0.5rem;
     }
     
-    .boxshadow2{
-      -webkit-box-shadow: -1px -50px 12px 9px rgba(0,0,0,0.93); 
-      box-shadow: -1px -50px 12px 9px rgba(0,0,0,0.93); 
-    }
+    
     
   .thumby{
     position: relative;
@@ -84,6 +83,20 @@
     top: 13rem;
     
   }
+
+  .ghostDivSm{
+    z-index: -10;
+    position: absolute;
+    width: 100%;
+    top: 12rem;
+    margin-top: 0rem;
+    
+  } 
+
+   .boxshadowSm{
+    -webkit-box-shadow: -1px -50px 12px 30px rgba(0,0,0,0.92); 
+    box-shadow: -1px -50px 12px 30px rgba(0,0,0,0.92); 
+  } 
 
 }
   
@@ -97,11 +110,11 @@
   
   .backgroundMovies{
     background-image: url(../src/components/Assets/darthvader.jpg);
-    background-size: 100% 60%;
+    background-size: 100% 85vh;
     background-repeat: no-repeat;
-    position: relative;
+    position: absolute;
     z-index: -10;
-  }
+  } 
   
    .thumby::after{
     content: "MOVY ORIGINAL";
@@ -112,7 +125,7 @@
     position: absolute;
     z-index: 10;
     top: 7.5rem;
-    left: 0.6rem;
+    left: 0.1rem;
     border-radius: 0.1rem;
     color: white;
     font-size: 0.4rem;
@@ -144,12 +157,12 @@
   
     .backgroundMovies{
       background-image: url(../src/components/Assets/darthvader.jpg);
-      background-size: 100% 75%;
+      background-size: 100% 102vh;
       background-repeat: no-repeat;
-      position: relative;
+      position: absolute;
       z-index: -10;
       
-    }
+    } 
   .thumby::after{
       content: "MOVY ORIGINAL";
       display: block;
@@ -159,7 +172,7 @@
       position: absolute;
       z-index: 10;
       top: 7.5rem;
-      left: 1.4rem;
+      left: 1.2rem;
       border-radius: 0.1rem;
       color: white;
       font-size: 0.4rem;
@@ -257,21 +270,23 @@
     -webkit-box-shadow: 0px -50px 28px 40px rgba(0,0,0,0.95);
   box-shadow: 0px -50px 28px 40px rgba(0,0,0,0.95);
   }
+
+  
  
-  .ghostDiv1{
+  .ghostDivMd{
     z-index: -1;
     position: absolute;
     width: 100%;
-    top: 16rem;
+    top: 17rem;
     margin-top: 5rem;
     
   } 
 
-  .ghostDiv2{
+  .ghostDivLg{
     z-index: -1;
     position: absolute;
     width: 100%;
-    top: 19rem;
+    top: 18.2rem;
     margin-top: 5rem;
     
   } 
