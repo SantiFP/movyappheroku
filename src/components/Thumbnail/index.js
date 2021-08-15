@@ -38,9 +38,9 @@ const Thumbnail = ({ data, title}) => {
                   </div>
 
                   <div className="w-3/12">
-                    <h5 className="text-xs font-extralight text-blue-300 -mt-2 mb-2">Pass the mouse over the pics to see the plot</h5>
+                    <h5 className="text-xs font-extralight text-blue-400 -mt-2 mb-2">Pass the mouse over the pics to see the plot</h5>
                     <h1 className="text-lg mb-3">{textTitle}</h1>
-                    <p className="font-thin text-sm font-extralight float-right" >{text}</p>
+                    <p className="font-thin text-xs font-normal mr-1 float-right " >{text}</p>
 
                   </div>
                 
