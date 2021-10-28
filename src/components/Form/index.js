@@ -1,39 +1,22 @@
 import React from 'react';
+// import Button  from '../Button'
 
 
-export const FormLogin = (props) => {
+export const FormLogin = ({placeHolder, name, type, id, onChange}) => {
     return (
         <>
-        <section className= "mt-2 md:float-left md:w-2/5 ">
-            
-          <form  className="flex flex-col w-11/12 mx-auto "> 
-
-                <input class="input mt-5 p-2 pl-5 py-3 placeholder-blue-500 font-semibold 
-                md:py-4 lg:py-2 lg:mt-3" type="text" placeholder={props.placeHolder} />
-                
-          </form> 
-
-        </section>
-
-        </>
+          <input className="input mt-5 p-2 pl-5 py-3 placeholder-blue-500 font-semibold 
+          md:py-4 lg:py-2 lg:mt-3" id={id} name={name} onChange={onChange} type={type} placeholder={placeHolder} />
+         </>
     )
 }
 
-export const FormSignUp = (props) => {
+export const FormSignUp = ({placeholder, name, type,text}) => {
   return(
 
     <>
-      <section className="mt-4 ">
-
-        <form  className="flex flex-col w-11/12 mx-auto "> 
-
-            <input className="input py-4 pl-5 placeholder-blue-500 font-semibold 
-            lg:py-3" type="text" placeholder={props.placeHolder} />
-
-        </form>
-
-      </section>
-
+      <input className="input py-4 pl-5 placeholder-blue-500 font-semibold mt-2
+      lg:py-3" placeHolder={placeholder}  name={name} type={type}/>
     </>
   )
 }

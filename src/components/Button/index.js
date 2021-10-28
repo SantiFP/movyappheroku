@@ -1,10 +1,12 @@
 import React from 'react';
 
-const Button = (props) => {
+
+
+const Button = ({onClick, text}) => {
     return (
        <>
-        <button className="boton rounded-lg py-2 px-16 mt-8 md:mt-12">{props.text}</button>
-       </>
+        <button type="submit" onClick={onClick} className="boton rounded-lg py-2 mb-24 mt-0 px-16 mt-8 md:mt-12">{text}</button>
+      </>
     )
 }
 

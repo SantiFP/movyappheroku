@@ -9,7 +9,8 @@ import { Home } from './pages/Home';
 import { SignUp } from './pages/SignUp'
 import { Login } from './pages/Login';
 import { Movies } from './pages/Movies';
-import './index.css'
+import './index.css';
+
 
 function App() {
   return (

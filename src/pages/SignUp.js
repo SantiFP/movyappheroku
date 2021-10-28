@@ -3,24 +3,35 @@ import { Header } from '../components/Header';
 import { FormSignUp,FormTypeRadio } from '../components/Form';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
+import { useAlert } from 'react-alert'
 
 
 export const SignUp = () => {
 
+    
+    const alert = useAlert();
+
     return ( 
         <>
+        
             <div>
+            
                 <Header text="LOG IN" />
-                <div className="mt-12 md:absolute md:top-40 md:w-2/5">
-                    <FormSignUp placeHolder="Name" />
-                    <FormSignUp placeHolder="Country" />
-                    <FormSignUp placeHolder="Password" />
-                    <FormSignUp placeHolder="Confirm Password" />
-                </div>
-                <FormTypeRadio />
-                <div className="mb-24 mt-14"><Button text="SIGN UP NOW" /></div>
-                <div className="mt-10 mb-5 font-medium text-sm md:w-5/12 md:mx-auto md:text-left lg:text-center" ><Footer /></div>
+                <form   method="POST" action="http://localhost:5000/signup"  >
+                    <div className="mt-12 flex flex-col w-11/12 mx-auto  md:absolute md:ml-1 md:top-20 md:w-2/5">
+                        <FormSignUp name="name" placeholder="Name" type="text"/>
+                        <FormSignUp  name="email" placeholder="Email" type="email"/>
+                        <FormSignUp  name="password" placeholder="Password" type="password"/>
+                        <FormSignUp name="confirmpassword" placeholder="Confirm Password" type="password"/>
+                    </div>
+                    <div>
+                       <FormTypeRadio />
+                       <span onClick={() => {alert.show('Registro exitoso')}}><Button  text="SIGN UP NOW" /></span>
+                    </div>
+                </form>
+                
             </div>
+            <div><Footer /></div>
         </>
     )
 }

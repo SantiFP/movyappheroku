@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Pricing = () => {
     
     return (
         <>
         
-        <div className="md:absolute top-40 left-10 xl:ml-24 ">
+        <div className="md:absolute top-32 left-20 xl:ml-24 ">
 
             {/* <!-- Distintos <p> con distintos saltos de linea para cada resolución (móvil,tablet y desktop) --> */}
 
@@ -22,8 +23,8 @@ export const Pricing = () => {
 
             <p className="font-normal text-lg mt-0.5 lg:mb-24">USD 10.50/month</p>
 
-            <button className="boton rounded-lg py-2 px-16
-            mt-4  ">SIGN UP NOW</button>
+            <div> <Link to='/signUp'> <button className="boton rounded-lg py-2 px-16
+            mt-4  ">SIGN UP NOW</button></ Link></div>
 
             <p className="text-white txt mt-6 ml-4">*Price may vary depending on the currency or platform used for payment.
             <br /> Third-party fees may apply.</p>

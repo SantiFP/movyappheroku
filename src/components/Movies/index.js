@@ -1,24 +1,23 @@
-// import { useState} from 'react' 
-
-
-export const Movie = ({ data,overview,textTitle}) => {
+export const Movie = ({ data,overview,movieTitle}) => {
   
-  
-         
+ 
 
     return (
       <div className="relative" >
 
-            <div className="thumby cursor-pointer" onMouseEnter={() => textTitle('Overview:')}
-              onMouseLeave={() => textTitle('')} >
+            <div className="thumby cursor-pointer" onMouseEnter={() => movieTitle(data.title)}
+              onMouseLeave={() => movieTitle('')} > <a HREF={data.trailer}> 
                 
-              <img className="thumbnail " onMouseEnter={() => overview(data.overview)}
+              <img className="thumbnail " onMouseEnter={() => overview(data.plot)}
               onMouseLeave={() => overview('')}
-              src={"https://image.tmdb.org/t/p/w500"+[data.poster_path]} alt="img" />
-             
+              src={data.movie_poster} alt="img" />
+
+            </a>
             </div>
         
         
+        
+
       </div>
     )
   }

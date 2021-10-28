@@ -2,21 +2,21 @@ import React from 'react';
 import { Movie } from '../Movies';
 import {useState} from 'react'
 
-const Thumbnail = ({ data, title}) => {
+const Thumbnail = ({ info, title}) => {
    
 
-  const [text, setText] = useState('');
+  const [plot, setPlot] = useState('');
   
 
   const showOverview = (newValue) => {
-    setText(newValue);
+    setPlot(newValue);
    }
      
-   const [textTitle, setTextTitle] = useState('');
+   const [movieTitle, setMovieTitle] = useState('');
   
 
-   const handleTextTitle = (newValue) => {
-     setTextTitle(newValue);
+   const handleMovieTitle = (newValue) => {
+     setMovieTitle(newValue);
     }
       
       return (
@@ -31,16 +31,17 @@ const Thumbnail = ({ data, title}) => {
               
                   <div className="flex flex-row ml-5 ">
                     
-                    {data?.map((movie) => <Movie data={movie}
-                    overview={showOverview} textTitle={handleTextTitle}/>)}
+                    {info?.map((movie) => <Movie data={movie} key={movie._id} 
+                    overview={showOverview} movieTitle={handleMovieTitle}/>)}
                 
                   
                   </div>
-
+                  
                   <div className="w-3/12">
-                    <h5 className="text-xs font-extralight text-blue-400 -mt-2 mb-2">Pass the mouse over the pics to see the plot</h5>
-                    <h1 className="text-lg mb-3">{textTitle}</h1>
-                    <p className="font-thin text-xs font-normal mr-1 float-right " >{text}</p>
+                    
+                          <h1 className="text-sm font-semibold -mt-3 movieTitle">{movieTitle}</h1>
+
+                          <p className=" mt-3 text-center  float-right plot" >{plot}</p>
 
                   </div>
                 
