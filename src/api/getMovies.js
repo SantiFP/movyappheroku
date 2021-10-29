@@ -1,5 +1,5 @@
 export const getMovies  = () => {
-    return fetch('http://localhost:5000/movies')
+    return fetch('https://testecito.herokuapp.com/movies')
     .then((response) => response.json());
 };
 

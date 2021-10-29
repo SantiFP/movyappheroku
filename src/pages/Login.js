@@ -4,6 +4,7 @@ import { HeaderLogin } from '../components/Header';
 import { FormLogin } from '../components/Form';
 import  Footer  from '../components/Footer';
 import Button from '../components/Button';
+import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 // import { useAlert } from 'react-alert'
 
@@ -30,15 +31,15 @@ export const Login = () => {
                 <HeaderLogin text ="SIGN UP"/>
                  <div className=" mt-8 md:mt-44"> 
                     <section className= "mt-1 md:float-left md:w-2/5 ">
-
-                        <form method="POST" action="http://localhost:5000/login" className=" flex flex-col w-11/12 mx-auto "> 
+                    {/* method="POST" action="http://localhost:5000/login"  */}
+                        <form className=" flex flex-col w-11/12 mx-auto "> 
 
                             <FormLogin id="inputName" name="name" placeHolder="Email"  type="text" />
                             <FormLogin name="password" placeHolder="Password" type="password" />
 
                             {/* <p id="textoError"></p> */}
                 
-                            <div className="mt-8 md:mt-12"><Button text="LOG IN NOW" /></div>
+                            <div className="mt-8 md:mt-12"><Link to="/movies"><Button text="LOG IN NOW" /></Link></div>
 
                         </form>
                 

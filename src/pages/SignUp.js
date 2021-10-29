@@ -3,13 +3,14 @@ import { Header } from '../components/Header';
 import { FormSignUp,FormTypeRadio } from '../components/Form';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
-import { useAlert } from 'react-alert'
+// import { useAlert } from 'react-alert';
+import { Link } from 'react-router-dom'
 
 
 export const SignUp = () => {
 
     
-    const alert = useAlert();
+    // const alert = useAlert();
 
     return ( 
         <>
@@ -17,7 +18,8 @@ export const SignUp = () => {
             <div>
             
                 <Header text="LOG IN" />
-                <form   method="POST" action="http://localhost:5000/signup"  >
+                {/* method="POST" action="http://localhost:5000/signup"  */}
+                <form   >
                     <div className="mt-12 flex flex-col w-11/12 mx-auto  md:absolute md:ml-1 md:top-20 md:w-2/5">
                         <FormSignUp name="name" placeholder="Name" type="text"/>
                         <FormSignUp  name="email" placeholder="Email" type="email"/>
@@ -26,7 +28,8 @@ export const SignUp = () => {
                     </div>
                     <div>
                        <FormTypeRadio />
-                       <span onClick={() => {alert.show('Registro exitoso')}}><Button  text="SIGN UP NOW" /></span>
+                       <Link to="/login"><Button  text="SIGN UP NOW" /></Link>
+
                     </div>
                 </form>
                 
