@@ -39,7 +39,7 @@ app.post('/signup', async (request, response) => {
     const userCreated = userModel.create({ "name":newUser.name, "email":newUser.email, "password":password});
 
      if(userCreated){
-       setTimeout(()=> response.redirect("https://movyapp.herokuapp.com/movies"),2000)
+       setTimeout(()=> response.redirect("https://movyapp.herokuapp.com/login"),2000)
      } 
 });
 
