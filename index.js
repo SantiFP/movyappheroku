@@ -77,13 +77,22 @@ app.post('/login', async (request, response) => {
     }
 });
 
-app.get('/movies', async (request,response) => {
+app.get('/', async (request,response) => {
 
-    // const movies = await data.find({}); 
-    // response.json(movies)
-   response.send('ya sabe')
+    response.send('testecito')
 
 })
+
+app.get('/movies', async (request,response) => {
+
+    const movies = await data.find({}); 
+    response.json(movies)
+//    response.send('ya sabe')
+
+})
+
+
+
 app.listen(PORT, () =>{
     console.log("Server working")
 })
