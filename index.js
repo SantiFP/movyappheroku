@@ -91,6 +91,14 @@ app.get('/movies', async (request,response) => {
 
 })
 
+app.get('/test', async (request,response) => {
+
+    // const movies = await data.find({}); 
+    response.send('automatic deploy')
+//    response.send('ya sabe')
+
+})
+
 
 
 app.listen(PORT, () =>{
