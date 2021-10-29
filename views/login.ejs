@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header >
+
+        <img class="relative imgheader w-full md:hidden " src="./imgheader.jpg" alt="img">
+
+        <img class="hidden imgheader md:block float-right w-3/5 md:-mt-4 " src="./imgheader2.jpg" alt="img">
+
+        <a rel="signup" href="http://localhost:3000/signUp"><button class="boton rounded-lg py-1 px-5 absolute right-5 top-5">SIGN UP</button></a>
+    
+
+    </header> 
+
+    <section class="mt-12 md:float-left md:w-2/5 md:mt-48 ">
+
+        <form  method="POST" action="http://localhost:5000/login" class="flex flex-col w-11/12 mx-auto "> 
+
+            <input class="input p-2 pl-5 py-3 placeholder-blue-500 font-semibold 
+            md:py-4 lg:py-2" type="text" name="name" placeholder="Email">
+
+            <input class="input mt-5 p-2 py-3 pl-5 placeholder-blue-500 font-semibold 
+            md:py-4 lg:py-2 lg:mt-3" type="password" name="password" placeholder="Password">
+           
+
+            <p class="advice">Usuario o contraseña incorrectos</p>
+
+            <div className="mt-8 md:mt-12"><button class="boton rounded-lg py-2 mb-24 mt-0 px-16 mt-8 md:mt-12">LOG IN NOW</button></div>
+
+        </form> 
+
+    </section>
+    
+    <footer class="mt-10 mb-5 font-medium text-sm md:hidden">
+    
+        <p>@2021</p>
+    
+    
+    </footer>
+    
+</body>
+</html>
