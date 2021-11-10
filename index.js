@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/movyapp');
 const bcrypt = require('bcryptjs');
 const bodyParser = require('body-parser');
 
@@ -18,6 +17,12 @@ app.use(express.static (path.join(__dirname,'views')));
 
 app.set('views', path.join(__dirname,'views'))
 app.set('view engine', 'ejs')
+
+const MONGODB_URI = 'mongodb+srv://santiFP:4vtpIka0wi2KMaKv@usersdb-movy.imjdj.mongodb.net/movyapp?retryWrites=true&w=majority'
+mongoose.connect(MONGODB_URI , {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
 
 const userModel = mongoose.model('users', {name:String, email:String, password:String});
 
