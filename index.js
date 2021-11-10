@@ -4,6 +4,8 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const bodyParser = require('body-parser');
 
+const PORT = process.env.PORT || 5001;
+
 const path = require('path')
 
 app.use(bodyParser.urlencoded({ extended:false }));
@@ -89,7 +91,7 @@ app.get('/movies', async (request,response) => {
    
 
 })
-app.listen('5000', () =>{
+app.listen(PORT, () =>{
     console.log("Server working")
 })
 
