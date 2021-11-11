@@ -11,8 +11,6 @@ import { useAlert } from 'react-alert'
 
 export const Login = () => {
 
-    const alert = useAlert();
-
     
     return ( 
         <>
@@ -29,7 +27,7 @@ export const Login = () => {
                             <FormLogin name="password" placeHolder="Password" type="password" />
 
                 
-                            <div className="mt-8 md:mt-12"><Button onClick={() => { alert() }} text="LOG IN NOW" /></div>
+                            <div className="mt-8 md:mt-12"><Button text="LOG IN NOW" /></div>
 
                         </form>
                 
