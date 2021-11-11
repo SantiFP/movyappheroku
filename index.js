@@ -62,7 +62,7 @@ app.post('/login', async (request, response) => {
 
     console.log("test: ", test)
     
-    if(!test) {  // el signo ! indica que el siguiente fragmento de codigo se ejecutara en caso de que no se haya concretado la busqueda indicada en la variable user // 
+    if(!user) {  // el signo ! indica que el siguiente fragmento de codigo se ejecutara en caso de que no se haya concretado la busqueda indicada en la variable user // 
            response.render('login', {})
         // response.json("no encontro usuario")
     } else { 
