@@ -28,9 +28,9 @@ export const HeaderLogin = (props) => {
     <>
      <header >
 
-        <img className="relative imgheader w-full md:hidden " src={imgheader} alt="img" />
+        <img className="relative  w-full md:hidden " src={imgheader} alt="img" />
 
-        <img className="hidden imgheader md:block float-right w-3/5 md:-mt-56" src={imgheader2} alt="img" />
+        <img className="hidden md:block float-right w-3/5 md:h-screen -mt-52 mb-0" src={imgheader2} alt="img" />
 
         <div><Link to='/signUp'><button className="boton rounded-lg py-1 px-5 absolute right-5 top-5">{props.text}</button></Link></div>
 
