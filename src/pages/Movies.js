@@ -60,7 +60,7 @@ export const Movies = () => {
                         <div className=" pt-10 md:pt-0 md:relative md:top-28 ">
                             <h5 className="text-base font-normal text-white mb-5 mouseOver md:-mt-16">Click the pics to watch the trailer or mouse over to see the plot</h5>
                             <div className="pt-6 md:hidden"><Thumbnail title="My List" info={moviesSm} /></div>
-                            <div className="hidden md:block pt-6 bg-black "><Thumbnail title="My List" info={movies} /></div>
+                            <div className="hidden md:block pt-6"><Thumbnail title="My List" info={movies} /></div>
                             <div className="pt-12 -mt-5 md:hidden"><Thumbnail  title="Trending Now" info={moviesSm} /></div> 
                             <div className="pt-12  hidden md:block bg-black md:-mt-5"><Thumbnail  title="Trending Now" info={movies} /></div> 
                             <div className="mt-6 bg-black md:hidden"><Thumbnail title="Recently Added" info={moviesSm}/></div>
