@@ -46,7 +46,7 @@ app.post('/signup', async (request, response) => {
     const userCreated = userModel.create({ "name":newUser.name, "email":newUser.email, "password":password});
 
      if(userCreated){
-       setTimeout(()=> response.redirect("https://movyapp.herokuapp.com/login"),2000)
+       setTimeout(()=> response.redirect("https://movyapp.herokuapp.com/login"),2005)
      } 
 });
 
@@ -70,14 +70,14 @@ app.post('/login', async (request, response) => {
 
     // console.log('name: ', user )
     if(!test) {  // el signo ! indica que el siguiente fragmento de codigo se ejecutara en caso de que no se haya concretado la busqueda indicada en la variable user // 
-           setTimeout(()=> response.render('login', {}),0000)
+           response.render('login', {})
     } else { 
         const validPassword = await bcrypt.compare(request.body.password, user.password);
         if (!validPassword) {
-            setTimeout(()=> response.render('login', {}),0000)
+            response.render('login', {})
         } else { 
 
-            setTimeout(()=> response.redirect("https://movyapp.herokuapp.com/movies"),0000)
+            response.redirect("https://movyapp.herokuapp.com/movies")
               
         }
     }
