@@ -1,5 +1,5 @@
 export const getMovies  = () => {
-    return fetch('https://testecito.herokuapp.com/movies')
+    return fetch('https://movybackend.herokuapp.com/movies')
     .then((response) => response.json());
 };
 
