@@ -39,7 +39,7 @@ const Thumbnail = ({ info, title}) => {
                   
                   <div className="w-3/12">
                     
-                          <h1 className="text-sm font-semibold -mt-3 movieTitle">{movieTitle}</h1>
+                          <h1 className="text-base font-semibold -mt-3 movieTitle">{movieTitle}</h1>
 
                           <p className=" mt-3 text-center  float-right plot" >{plot}</p>
 
