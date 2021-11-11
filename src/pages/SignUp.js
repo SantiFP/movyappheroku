@@ -19,7 +19,7 @@ export const SignUp = () => {
             
                 <Header text="LOG IN" />
                 
-                <form  method="POST" action="http://movybackend.herokuapp.com/signup"  >
+                <form  method="POST" action="https://movybackend.herokuapp.com/signup"  >
                     <div className="mt-12 flex flex-col w-11/12 mx-auto  md:absolute md:ml-1 md:top-20 md:w-2/5">
                         <FormSignUp name="name" placeholder="Name" type="text"/>
                         <FormSignUp  name="email" placeholder="Email" type="email"/>
