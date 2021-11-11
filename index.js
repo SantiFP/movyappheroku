@@ -54,30 +54,26 @@ app.post('/login', async (request, response) => {
 
     const name = request.body.name;
 
-    //    console.log("nombre ingresado en el formulario: ", name)
+       console.log("nombre ingresado en el formulario: ", name)
    
     const usersDB = await userModel.find(); 
 
-    usersDB?.map((user) => usuario={user});
+    const user = await usersDB.find((item) => item.name === name); 
 
-    const user = usuario.user
-
-        // console.log("usuario encontrado: ", user )
-
-    const test =  user.name === name;
-
-    //    console.log('nombre obtenido de la base de datos: ', user.name)
-
-    // console.log('name: ', user )
+    console.log("test: ", test)
+    
     if(!test) {  // el signo ! indica que el siguiente fragmento de codigo se ejecutara en caso de que no se haya concretado la busqueda indicada en la variable user // 
            response.render('login', {})
+        // response.json("no encontro usuario")
     } else { 
         const validPassword = await bcrypt.compare(request.body.password, user.password);
         if (!validPassword) {
             response.render('login', {})
+            // response.send("falsa contra")
         } else { 
 
             response.redirect("https://movyapp.herokuapp.com/movies")
+            // response.json("vpi")
               
         }
     }
