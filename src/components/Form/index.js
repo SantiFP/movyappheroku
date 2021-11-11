@@ -16,7 +16,7 @@ export const FormSignUp = ({placeholder, name, type,text}) => {
 
     <>
       <input className="input py-4 pl-5 placeholder-blue-500 font-semibold mt-2
-      lg:py-3" placeHolder={placeholder}  name={name} type={type}/>
+      lg:py-3 lg:mb-6 lg:py-6" placeholder={placeholder}  name={name} type={type}/>
     </>
   )
 }
@@ -35,18 +35,18 @@ export const FormTypeRadio = () => {
 
             <p className="text-xs hidden lg:block">According with your plan we have an specific catalogue of movies</p>
 
-            <form className="mt-5 text-left ml-6 font-semibold text-xl formulario md:w-4/12 md:mx-auto lg:w-3/12 lg:mx-auto ">
+            <div className="mt-5 text-left ml-6 font-semibold text-xl formulario md:w-4/12 md:mx-auto lg:w-3/12 lg:mx-auto ">
             
                 <input type="radio" id="latin" name="signUp" value="latin" />
-                <label className="md:pl-14" for="latin">Latino +</label><br />
+                <label className="md:pl-14" htmlFor="latin">Latino +</label><br />
     
                 <input type="radio" id="inter" name="signUp" value="inter" />
-                <label className="md:pl-14" for="inter">International +</label><br />
+                <label className="md:pl-14" htmlFor="inter">International +</label><br />
     
                 <input className="mt-6" id="art" type="radio" name="signUp" value="art" />
-                <label className="md:pl-14" for="art">Art +</label>
+                <label className="md:pl-14" htmlFor="art">Art +</label>
             
-            </form>
+            </div>
     
       </section>
 

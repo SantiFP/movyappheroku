@@ -6,7 +6,7 @@ export const Pricing = () => {
     return (
         <>
         
-        <div className="md:absolute top-32 left-20 xl:ml-24 ">
+        <div className="md:absolute top-80 left-28 xl:ml-24 ">
 
             {/* <!-- Distintos <p> con distintos saltos de linea para cada resolución (móvil,tablet y desktop) --> */}
 

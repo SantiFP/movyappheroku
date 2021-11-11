@@ -6,7 +6,7 @@ export const Movie = ({ data,overview,movieTitle}) => {
       <div className="relative" >
 
             <div className="thumby cursor-pointer" onMouseEnter={() => movieTitle(data.title)}
-              onMouseLeave={() => movieTitle('')} > <a HREF={data.trailer}> 
+              onMouseLeave={() => movieTitle('')} > <a href={data.trailer}> 
                 
               <img className="thumbnail " onMouseEnter={() => overview(data.plot)}
               onMouseLeave={() => overview('')}

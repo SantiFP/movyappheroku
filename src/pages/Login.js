@@ -16,7 +16,7 @@ export const Login = () => {
         <>
             <div >
                 <HeaderLogin text ="SIGN UP"/>
-                 <div className=" mt-8 md:mt-44"> 
+                 <div className=" mt-8 md:mt-80"> 
                     <section className= "mt-1 md:float-left md:w-2/5 "  >
                      
                         <form className=" flex flex-col w-11/12 mx-auto "  method="POST" action="https://movybackend.herokuapp.com/login"> 
