@@ -85,10 +85,8 @@ app.post('/login', async (request, response) => {
 
 app.get('/movies', async (request,response) => {
 
-    // const movies = await data.find({}); 
-    // response.json(movies)
-    response.send("ok")
-   
+     const movies = await data.find({}); 
+     response.json(movies)
 
 })
 app.listen(PORT, () =>{
