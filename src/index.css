@@ -162,7 +162,6 @@
       background-repeat: no-repeat;
       position: absolute;
       z-index: -10;
-      
     } 
   .thumby::after{
       content: "MOVY ORIGINAL";
@@ -188,6 +187,7 @@
     .positionVader{
       position: relative;
        top: 28rem;
+    
       
   
   }
@@ -318,6 +318,6 @@
 
   .plot{
     font-family: 'Birthstone Bounce', cursive;
-    font-size: 0.5rem;
+    font-size: 0.65rem;
     font-weight:lighter
   }

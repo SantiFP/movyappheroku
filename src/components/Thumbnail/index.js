@@ -37,11 +37,11 @@ const Thumbnail = ({ info, title}) => {
                   
                   </div>
                   
-                  <div className="w-3/12">
+                  <div className="w-3/12 bg-black">
                     
                           <h1 className="text-base font-semibold -mt-3 movieTitle">{movieTitle}</h1>
 
-                          <p className=" mt-3 text-center  float-right plot" >{plot}</p>
+                          <p className=" mt-3 text-center h-full bg-black  float-right plot" >{plot}</p>
 
                   </div>
                 
