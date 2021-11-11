@@ -5,7 +5,7 @@ import { FormLogin } from '../components/Form';
 import  Footer  from '../components/Footer';
 import Button from '../components/Button';
 // import { Link } from 'react-router-dom';
-import { useAlert } from 'react-alert'
+// import { useAlert } from 'react-alert'
 
 
 
@@ -15,8 +15,6 @@ export const Login = () => {
     return ( 
         <>
             <div >
-
-            
                 <HeaderLogin text ="SIGN UP"/>
                  <div className=" mt-8 md:mt-44"> 
                     <section className= "mt-1 md:float-left md:w-2/5 "  >
