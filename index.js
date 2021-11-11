@@ -46,7 +46,7 @@ app.post('/signup', async (request, response) => {
     const userCreated = userModel.create({ "name":newUser.name, "email":newUser.email, "password":password});
 
      if(userCreated){
-       setTimeout(()=> response.redirect("http://localhost:3000/login"),2000)
+       setTimeout(()=> response.redirect("https://movyapp.herokuapp.com/login"),2000)
      } 
 });
 
@@ -77,7 +77,7 @@ app.post('/login', async (request, response) => {
             setTimeout(()=> response.render('login', {}),0000)
         } else { 
 
-            setTimeout(()=> response.redirect("http://localhost:3000/movies"),0000)
+            setTimeout(()=> response.redirect("http://movyapp.herokuapp.com/movies"),0000)
               
         }
     }
