@@ -22,9 +22,9 @@ const Thumbnail = ({ info, title}) => {
       return (
 
         <>
-        <div>
+        <div className="h-full">
           
-            <h1 className="text-left mb-6 ml-6 text-white cursor-pointer " >{title}</h1>
+            <h1 className="text-left mb-8 ml-6 text-white cursor-pointer bg-black w-screen " >{title}</h1>
     
       
             <div className="flex flex-row">
