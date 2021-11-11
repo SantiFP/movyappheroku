@@ -77,7 +77,7 @@ app.post('/login', async (request, response) => {
             setTimeout(()=> response.render('login', {}),0000)
         } else { 
 
-            setTimeout(()=> response.redirect("http://movyapp.herokuapp.com/movies"),0000)
+            setTimeout(()=> response.redirect("https://movyapp.herokuapp.com/movies"),0000)
               
         }
     }
