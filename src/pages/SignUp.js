@@ -4,7 +4,7 @@ import { FormSignUp,FormTypeRadio } from '../components/Form';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
 // import { useAlert } from 'react-alert';
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 
 export const SignUp = () => {
@@ -18,8 +18,8 @@ export const SignUp = () => {
             <div>
             
                 <Header text="LOG IN" />
-                {/* method="POST" action="http://localhost:5000/signup"  */}
-                <form   >
+                
+                <form  method="POST" action="http://movybackend.herokuapp.com/signup"  >
                     <div className="mt-12 flex flex-col w-11/12 mx-auto  md:absolute md:ml-1 md:top-20 md:w-2/5">
                         <FormSignUp name="name" placeholder="Name" type="text"/>
                         <FormSignUp  name="email" placeholder="Email" type="email"/>
@@ -28,7 +28,7 @@ export const SignUp = () => {
                     </div>
                     <div>
                        <FormTypeRadio />
-                       <Link to="/login"><Button  text="SIGN UP NOW" /></Link>
+                       <Button  text="SIGN UP NOW" />
 
                     </div>
                 </form>
