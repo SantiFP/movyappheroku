@@ -16,7 +16,7 @@ export const FormSignUp = ({placeholder, name, type,text}) => {
 
     <>
       <input className="input py-4 pl-5 placeholder-blue-500 font-semibold mt-2
-      lg:py-3 lg:mb-6 lg:py-6" placeholder={placeholder}  name={name} type={type}/>
+      lg:py-3 lg:mb-5 lg:py-4" placeholder={placeholder}  name={name} type={type}/>
     </>
   )
 }
